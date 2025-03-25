@@ -1,6 +1,8 @@
 import React from "react";
 import { useTheme } from "../context/ThemeContext";
-import { FaSun, FaMoon } from "react-icons/fa";
+import { FaToggleOn ,FaToggleOff} from "react-icons/fa";
+
+
 
 const ThemeToggleButton = () => {
   const { theme, toggleTheme } = useTheme();
@@ -10,7 +12,7 @@ const ThemeToggleButton = () => {
       onClick={toggleTheme}
       className="flex items-center gap-2"
     >
-      {theme === "light" ? <FaMoon /> : <FaSun />}
+      {theme === "light" ? <FaToggleOn size={28} className="text-xl text-gray-900"/> : <FaToggleOff size={28} className="text-xl"/>}
     </button>
   );
 };

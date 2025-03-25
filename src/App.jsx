@@ -9,6 +9,9 @@ import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
 import Footer from "./components/Footer";
 import ToggleThemeButton from "./components/ToggleThemeButton";
+import { FaEdit, FaPen } from "react-icons/fa";
+import { FaUpDown, FaUpLong } from "react-icons/fa6";
+import ActionIcons from "./components/ActionIcons";
 
 const App = () => {
   return (
@@ -24,9 +27,8 @@ const App = () => {
       </Routes>
 
       {/* Theme Toggle Button fixed to bottom-right */}
-      <div className="fixed bottom-4 left-4 z-50">
-        <ToggleThemeButton />
-      </div>
+
+      <ActionIcons />
 
       <Footer />
     </Router>
